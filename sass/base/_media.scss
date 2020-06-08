@@ -101,4 +101,19 @@
             width: 65%;
         }
     }
+
+    .consultation {
+        .title_left {
+            text-align: center;
+        }
+
+        &__descr {
+            text-align: center;
+        }
+
+        form {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
 }
