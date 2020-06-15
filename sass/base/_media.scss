@@ -28,6 +28,16 @@
             width: 100%;
         }
     }
+
+    .carousel {
+        &__inner {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 660px) {
