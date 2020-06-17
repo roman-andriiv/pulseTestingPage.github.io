@@ -1,134 +1,170 @@
-@media (max-width: 964px) {
-    .container {
-        width: 100%;
-        padding: 20px;
-    }
+@media (max-width: 950px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
 
-    .preference {
-        &__text {
-            &_descr {
-                padding: 0 10px;
-            }
-        }
+  .preference {
+    &__text {
+      &_descr {
+        padding: 0 10px;
+      }
     }
+  }
+}
+
+@media (max-width: 940px) {
+  .catalog {
+    &-item {
+      width: 49%;
+    }
+  }
 }
 
 @media (max-width: 767px) {
-    .container {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .promo {
+    &__wrapper {
+      align-items: center;
+    }
+
+    &__icons {
+      width: 100%;
+    }
+  }
+
+  .carousel {
+    &__inner {
+      width: 100%;
+
+      img {
         width: 100%;
-        padding: 20px;
+      }
     }
-
-    .promo {
-        &__wrapper {
-            align-items: center;
-        }
-
-        &__icons {
-            width: 100%;
-        }
-    }
-
-    .carousel {
-        &__inner {
-            width: 100%;
-
-            img {
-                width: 100%;
-            }
-        }
-    }
+  }
 }
 
 @media (max-width: 660px) {
-    .header__official {
-        display: none;
-    }
+  .header__official {
+    display: none;
+  }
 
-    .preference__text {
-        font-size: 16px;
-    }
+  .preference__text {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 574px) {
-    .header {
-        flex-direction: column;
+  .header {
+    flex-direction: column;
 
-        a {
-            width: 100%;
-        }
-
-        &__phone {
-            display: none;
-        }
-
-
-        button {
-            margin-top: 15px;
-            width: 300px;
-            height: 50px;
-            font-size: 16px;
-        }
+    a {
+      width: 100%;
     }
 
-    .promo {
-
-        h1,
-        h2 {
-            text-align: center;
-        }
-
-        &__wrapper {
-            align-items: center;
-            width: 100%;
-        }
-
-        &__icons {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-
-        &__icon {
-            width: 65%;
-            font-size: 18px;
-            margin-bottom: 40px;
-
-            // border: 1px solid #ffffff;
-            img {
-                width: 70px;
-                margin-bottom: 10px;
-            }
-        }
+    &__phone {
+      display: none;
     }
 
-    .preference {
-        &__items {
-            flex-direction: column;
-            align-items: center;
-        }
+    button {
+      margin-top: 15px;
+      width: 300px;
+      height: 50px;
+      font-size: 16px;
+    }
+  }
 
-        &__item {
-            margin-top: 45px;
-            border: 1px solid $main-color;
-            padding: 5px 0;
-            width: 65%;
-        }
+  .promo {
+    h1,
+    h2 {
+      text-align: center;
     }
 
-    .consultation {
-        .title_left {
-            text-align: center;
-        }
-
-        &__descr {
-            text-align: center;
-        }
-
-        form {
-            margin-right: auto;
-            margin-left: auto;
-        }
+    &__wrapper {
+      align-items: center;
+      width: 100%;
     }
+
+    &__icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__icon {
+      width: 65%;
+      font-size: 18px;
+      margin-bottom: 40px;
+
+      // border: 1px solid #ffffff;
+      img {
+        width: 70px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .preference {
+    &__items {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      margin-top: 45px;
+      border: 1px solid $main-color;
+      padding: 5px 0;
+      width: 65%;
+    }
+  }
+
+  .consultation {
+    .title_left {
+      text-align: center;
+    }
+
+    &__descr {
+      text-align: center;
+    }
+
+    form {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .catalog {
+    &__tab {
+      font-size: 10px;
+      width: 140px;
+    }
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &-item {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+
+      &__link {
+        margin-top: 40px;
+      }
+    }
+
+    &-item__price {
+      font-size: 17px;
+    }
+  }
+
+  .button_mini {
+    width: 90px;
+    height: 35px;
+  }
 }
