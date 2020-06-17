@@ -46,6 +46,16 @@
       }
     }
   }
+
+  .feedback {
+    &-item {
+      align-items: center;
+
+      &__text {
+        margin-left: 35px;
+      }
+    }
+  }
 }
 
 @media (max-width: 660px) {
@@ -79,6 +89,7 @@
   }
 
   .promo {
+
     h1,
     h2 {
       text-align: center;
@@ -166,5 +177,30 @@
   .button_mini {
     width: 90px;
     height: 35px;
+  }
+
+  .feedback {
+    &-item {
+      flex-direction: column;
+      align-items: center;
+
+      &__text {
+        margin-left: 0;
+      }
+
+      &__client-name {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      &__subtitle {
+        text-align: center;
+      }
+
+      &__descr {
+        text-align: center;
+      }
+
+    }
   }
 }
