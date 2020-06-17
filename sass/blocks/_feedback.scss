@@ -1,0 +1,40 @@
+.feedback {
+    padding: 50px 0 70px 0;
+    // background-color: #e2e2e2;
+
+    &-item {
+        display: flex;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: start;
+
+        &:nth-child(3) {
+            margin-bottom: 0;
+        }
+
+        &__text {
+            margin-left: 62px;
+        }
+
+        &__client-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0d0d0d;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            font-weight: 300;
+            color: #646464;
+            margin-top: 10px;
+        }
+
+        &__descr {
+            font-size: 16px;
+            font-weight: 300;
+            color: #0d0d0d;
+            margin-top: 15px;
+        }
+    }
+}
