@@ -108,7 +108,7 @@
         Просто заполните форму заявки<br />
         и мы перезвоним вам в течении 10 минут
       </div>
-      <form class="feed-form" action="#">
+      <form id="consultation-form" class="feed-form" action="#">
         <input name="name" type="text" required placeholder="Ваше имя" />
         <input name="phone" type="number" required placeholder="Ваш телефон" />
         <input name="email" type="email" required placeholder="Ваш E-mail" />
@@ -457,9 +457,9 @@
       <div class="modal__subtitle">Просто заполните форму заявки</div>
       <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
       <form class="feed-form feed-form_mt25" action="#">
-        <input name="name" type="text" required placeholder="Ваше имя" />
-        <input name="phone" type="number" required placeholder="Ваш телефон" />
-        <input name="email" type="email" required placeholder="Ваш E-mail" />
+        <input name="name" type="text" placeholder="Ваше имя" />
+        <input name="phone" type="number" placeholder="Ваш телефон" />
+        <input name="email" type="email" placeholder="Ваш E-mail" />
         <!-- <input type="submit" value="Заказать консультацию"> -->
         <button class="button button_submit">Заказать консультацию</button>
       </form>
@@ -488,6 +488,7 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 

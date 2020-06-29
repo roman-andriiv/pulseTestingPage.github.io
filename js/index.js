@@ -53,4 +53,36 @@ $(document).ready(function () {
     });
 
 
+    // Forms Validate
+    function validateFotms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    reguired: true,
+                    email: true,
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите свое имя",
+                    minlength: jQuery.validator.format("Введите {0} символа!")
+                },
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                    required: "Пожалуйста, введите свой e-mail",
+                    email: "Неправельний адрес почти"
+                }
+            }
+        });
+    };
+    validateFotms('#consultation-form');
+    validateFotms('#consultation form');
+    validateFotms('#order form');
+
+
 });
