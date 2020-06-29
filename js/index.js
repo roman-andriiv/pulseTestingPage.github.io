@@ -84,5 +84,8 @@ $(document).ready(function () {
     validateFotms('#consultation form');
     validateFotms('#order form');
 
+    
+    //Masked Input Plugin
+    $('input[name=phone]').mask("+48 999-999-999");
 
 });
