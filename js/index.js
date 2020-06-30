@@ -84,8 +84,24 @@ $(document).ready(function () {
     validateFotms('#consultation form');
     validateFotms('#order form');
 
-    
+
     //Masked Input Plugin
     $('input[name=phone]').mask("+48 999-999-999");
 
+
+    // phpMailer
+    $('form').submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut(fast);
+            $('.overlay, #thanks').fadeIn(fast);
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
