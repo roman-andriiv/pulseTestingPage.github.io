@@ -123,4 +123,7 @@ $(document).ready(function () {
         });
         return false;
     });
+
+    //wow.min.js add
+    new WOW().init();
 });
